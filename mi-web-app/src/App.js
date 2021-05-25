@@ -1,6 +1,8 @@
 import React from 'react'
-import Products from './components/products/Products'
-
+/*import Products from './components/products/Products';
+import Navbar from './components/Navbar/Navbar';
+*/
+import{Products, Navbar} from './components'
 
 /*siempre vamos a tener un div como root*/ /**/ 
 
