@@ -1,8 +1,8 @@
 import React from 'react'
-/*import Products from './components/products/Products';
-import Navbar from './components/Navbar/Navbar';
-*/
-import{Products, Navbar} from './components'
+//import Products from './components/products/Products';
+//import Navbar from './components/Navbar/Navbar';
+
+import{Products, Navbar} from './components' //UNA MANERA MAS FACIL Y CORTA DE IMPORTAR
 
 /*siempre vamos a tener un div como root*/ /**/ 
 
@@ -24,6 +24,7 @@ import{Products, Navbar} from './components'
 const App = () => {
   return (
     <div>
+      <Navbar/>
       <Products/>
     </div>
   )
