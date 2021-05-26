@@ -2,8 +2,8 @@ import React from 'react'
 //import Products from './components/products/Products';
 //import Navbar from './components/Navbar/Navbar';
 
-import{Products, Navbar} from './components' //UNA MANERA MAS FACIL Y CORTA DE IMPORTAR
-
+import{Products, Navbar,Checkout} from './components' //UNA MANERA MAS FACIL Y CORTA DE IMPORTAR
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 /*siempre vamos a tener un div como root*/ /**/ 
 
 /*function App() {
@@ -23,10 +23,26 @@ import{Products, Navbar} from './components' //UNA MANERA MAS FACIL Y CORTA DE I
 
 const App = () => {
   return (
-    <div>
-      <Navbar/>
-      <Products/>
-    </div>
+    <Router>
+      <div>
+        <Navbar/>
+        <Switch>
+          <Route exact path="/">
+              <Products/>
+          </Route>
+
+          <Route exact path ="/cart">
+              
+          </Route>
+          <Route path="/Login">{/*Tengo que hacer un login --exact nose para que sirve*/ }
+
+          </Route>
+          
+          
+        </Switch>
+      </div>
+
+    </Router>
   )
 }
 
