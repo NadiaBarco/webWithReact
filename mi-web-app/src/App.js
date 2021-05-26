@@ -34,8 +34,8 @@ const App = () => {
           <Route exact path ="/cart">
               
           </Route>
-          <Route path="/Login">{/*Tengo que hacer un login --exact nose para que sirve*/ }
-
+          <Route exact path="/Login">{/*Tengo que hacer un login --exact nose para que sirve*/ }
+                <Checkout/>
           </Route>
           
           
