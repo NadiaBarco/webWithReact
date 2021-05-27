@@ -1,16 +1,15 @@
 import React,{useState}from 'react'
 import {InputLabel, Select, MenuItem, Button,Grid ,Typography} from '@material-ui/core';
 import {useForm, FormProvider} from 'react-hook-form';
+
+
+
 import FormInput from './CustomTextField'
 
 const AddressForm = () => {
-    const [ShippingCountries, setShippingCountries] =useState([]);
-    const [ShippingCountry, setShippingCountry] =useState('');
-    const [ShippingSubdivisions, setShippingSubdivisions] =useState('[]');
-    const [ShippingSubdivision, setShippingSubdivision] =useState([]);
-    const [ShippingOptions, setShippingOptions] =useState([])
-    const [ShippingOption, setShippingOption] =useState('')
+    
     const methods =useForm();
+
 
 
     return (
@@ -27,43 +26,19 @@ const AddressForm = () => {
                         <FormInput required name='phoneNumber' label='Phone Number'/>
                     <Grid item xs={12} sm={6}>
                         <InputLabel>Shipping Country</InputLabel>
-                        <Select value={} fullWidth onChange={}>
-                            <MenuItem key={} value={}>
+                        <Select fullWidth /*value={0}  onChange={0}*/>
+                            <MenuItem /*key={} value={}*/>
                                 Select Me
                             </MenuItem>
                         </Select>
                     </Grid>
-                    
-                    <Grid item xs={12} sm={6}>
-                        <InputLabel>Shipping Country</InputLabel>
-                        <Select value={} fullWidth onChange={}>
-                            <MenuItem key={} value={}>
-                                Select Me
-                            </MenuItem>
-                        </Select>
+                   
+                        
                     </Grid>
 
-
-                    <Grid item xs={12} sm={6}>
-                        <InputLabel>Shipping Subdivisions</InputLabel>
-                        <Select value={} fullWidth onChange={}>
-                            <MenuItem key={} value={}>
-                                Select Me
-                            </MenuItem>
-                        </Select>
-                    </Grid>
-
-
-                    <Grid item xs={12} sm={6}>
-                        <InputLabel>Shipping Options</InputLabel>
-                        <Select value={} fullWidth onChange={}>
-                            <MenuItem key={} value={}>
-                                Select Me
-                            </MenuItem>
-                        </Select>
-                    </Grid>
-
-                    </Grid>
+                    <Button variant="outlined" color="secondary"  >
+                            Submit
+                    </Button>
                 </form>
             </FormProvider>
         </div>

@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import {Paper, Stepper, Step, StepLabel, Typography, CircularProgress, Divider, Button} from '@material-ui/core'
 
 
@@ -14,6 +14,11 @@ const steps =['Shipping address', 'Payment details'];
 const Checkout = () => {
     const[activeStep, setActiveStep] =useState(0);
     const classes = useStyles();
+
+    useEffect(() =>{
+
+    },[]);
+
 
     const Confirmation = () =>(
         <div>
