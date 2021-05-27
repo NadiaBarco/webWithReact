@@ -21,7 +21,7 @@ const Checkout = () => {
         </div>
     )
 
-    const Form = () => activeStep ===0
+    const Form = () => activeStep === 0
      ?<AddressForm />
      :<PaymentForm/>
 
